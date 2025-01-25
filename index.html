@@ -1,64 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>My Resume</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Resume</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
- <h1>Abideen Ojo</h1>
- <img src="./image/image.png" height="100" alt="Abideen's photo" />
- 
- <h4>Summary</h4>
- <p>Detail-oriented and dynamic Electrical Engineer seeking the position of an electrical engineer in a technically organisation. </p>
- <hr />
 
- <h4>Education</h4>
- <ul>
-  <li>Post Baccalaureate Diploma in Engineering, Electrical, 
-  University of Manitoba, Winnipeg, Manitoba. October 2022</li>
-  <li>Bachelor of Science Degree in Electrical Engineering
-  University of Lagos, Lagos, Nigeria. June 2004
-</li>
- </ul>
+<body class="bg-gray-100 text-gray-800 font-sans">
+  <div class="max-w-4xl mx-auto p-6 bg-white shadow-md rounded-lg">
+    <!-- Header -->
+    <header class="text-center mb-6">
+      <h1 class="text-4xl font-bold text-blue-600">Abideen Ojo</h1>
+      <img src="./image/image.png" alt="Abideen's photo" class="w-24 h-24 mx-auto rounded-full mt-4">
+    </header>
 
-<h4>Work Experience</h4>
-<ul>
-  <li><h5>Wiring and Control Support - PTI Transformers.</h5></li>
-  <p>November 2023 - Till date</p>
-  <ul>
-    <li>Collaborated with cross-functional teams to ensure compliance with safety and quality standards.</li>
-    <li>Verified and mounted of control cabinet utilizing best practices as required.</li>
-    <li>Utilized electrical schematics to provide clear instructions and guidance during on-site visits</li>
-  </ul>
-  <li><h5>Project Coordinator - GA Technical Solutions.</h5></li>
-  <p>September 2021 - November 2023</p>
-  <ul>
-    <li>Assisted senior technicians in the installation, maintenance, and troubleshooting of electrical systems and equipment.</li>
-    <li>Reviewed technical documentation and provided support in updating plans and reports for internal and external
-    stakeholders.</li>
-    <li>Helped and supported Project Mangers/Program Managers on specific Project assignments.</li>
-  </ul>
-</ul>
+    <!-- Summary -->
+    <section class="mb-6">
+      <h4 class="text-2xl font-semibold border-b-2 border-blue-500 pb-1">Summary</h4>
+      <p class="mt-2 text-gray-700">Detail-oriented and dynamic Electrical Engineer seeking the position of an
+        electrical engineer in a technically inclined organization.</p>
+    </section>
 
-<h4>Skills</h4>
-<ul>
- <li>HTML, CSS, Javascript, React</li>
- <li>Java Programming Language</li>
- <li>Python Programming</li>
- <li>Data Analysis using SQL, Power BI, and Excel</li>
-</ul>
-<h4>Certification</h4>
-<ul>
- <li>Project Management Professional (PMP) May 2023</li>
- <li>Professional Scrum Master (PSM II)</li>
-</ul>
+    <!-- Education -->
+    <section class="mb-6">
+      <h4 class="text-2xl font-semibold border-b-2 border-blue-500 pb-1">Education</h4>
+      <ul class="list-disc list-inside mt-2 space-y-2">
+        <li>
+          <strong>Post Baccalaureate Diploma in Engineering, Electrical</strong>, University of Manitoba, Winnipeg,
+          Manitoba. <em>October 2022</em>
+        </li>
+        <li>
+          <strong>Bachelor of Science Degree in Electrical Engineering</strong>, University of Lagos, Lagos, Nigeria.
+          <em>June 2004</em>
+        </li>
+      </ul>
+    </section>
 
-<a href="./public/hobbies.html">Hobbies</a>
-<a href="./public/contact.html">Contact</a>
-<footer>
-  <p>&#169;Abideen Ojo. All right reserved</p>
-</footer>
+    <!-- Work Experience -->
+    <section class="mb-6">
+      <h4 class="text-2xl font-semibold border-b-2 border-blue-500 pb-1">Work Experience</h4>
+      <div class="mt-2 space-y-4">
+        <div>
+          <h5 class="text-xl font-medium">Wiring and Control Support - PTI Transformers</h5>
+          <p class="text-sm text-gray-600">November 2023 - Present</p>
+          <ul class="list-disc list-inside mt-2 space-y-1 text-gray-700">
+            <li>Collaborated with cross-functional teams to ensure compliance with safety and quality standards.</li>
+            <li>Verified and mounted control cabinets utilizing best practices as required.</li>
+            <li>Utilized electrical schematics to provide clear instructions and guidance during on-site visits.</li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="text-xl font-medium">Project Coordinator - GA Technical Solutions</h5>
+          <p class="text-sm text-gray-600">September 2021 - November 2023</p>
+          <ul class="list-disc list-inside mt-2 space-y-1 text-gray-700">
+            <li>Assisted senior technicians in the installation, maintenance, and troubleshooting of electrical systems
+              and equipment.</li>
+            <li>Reviewed technical documentation and provided support in updating plans and reports for internal and
+              external stakeholders.</li>
+            <li>Helped and supported Project Managers/Program Managers on specific project assignments.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
+    <!-- Skills -->
+    <section class="mb-6">
+      <h4 class="text-2xl font-semibold border-b-2 border-blue-500 pb-1">Skills</h4>
+      <ul class="list-disc list-inside mt-2 space-y-1 text-gray-700">
+        <li>HTML, CSS, JavaScript, React</li>
+        <li>Java Programming Language</li>
+        <li>Python Programming</li>
+        <li>Data Analysis using SQL, Power BI, and Excel</li>
+      </ul>
+    </section>
+
+    <!-- Certification -->
+    <section class="mb-6">
+      <h4 class="text-2xl font-semibold border-b-2 border-blue-500 pb-1">Certification</h4>
+      <ul class="list-disc list-inside mt-2 space-y-1 text-gray-700">
+        <li>Project Management Professional (PMP) <em>May 2023</em></li>
+        <li>Professional Scrum Master (PSM II)</li>
+      </ul>
+    </section>
+
+    <!-- Links -->
+    <div class="flex justify-between items-center border-t pt-4">
+      <a href="./public/hobbies.html" class="text-blue-500 hover:underline">Hobbies</a>
+      <a href="./public/contact.html" class="text-blue-500 hover:underline">Contact</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-6 text-center text-sm text-gray-500">
+      <p>&copy; Abideen Ojo. All rights reserved.</p>
+    </footer>
+  </div>
 </body>
+
 </html>
